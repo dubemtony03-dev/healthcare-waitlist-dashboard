@@ -1,0 +1,1 @@
+Dynamic Title = SWITCH(VALUES('Calculation Method (2)'[Calc Method]),"Average","Key Indicators - Patient wait List (Average)","Median","Key Indicators - Patient wait List (Median)")

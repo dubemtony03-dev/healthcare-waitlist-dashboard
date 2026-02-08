@@ -1,0 +1,1 @@
+Avg/Med Wait List = SWITCH(VALUES('Calculation Method (2)'[Calc Method]),"Average",[Average Wait List],"Median",[Median Wait list])

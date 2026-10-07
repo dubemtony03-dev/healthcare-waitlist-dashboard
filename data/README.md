@@ -1,9 +1,9 @@
 Healthcare Waitlist Dashboard (Power BI Project)
-🧠 Overview
+## Overview
 
 This Power BI project analyses hospital waiting list data for Inpatients and Outpatients from 2018–2021. The dashboard helps healthcare administrators and analysts monitor patient flow, waiting trends, and demographic profiles to support operational planning and resource allocation.
 
-🎯 Project Goals
+## Project Goals
 
 Track the current status of patient waiting lists.
 
@@ -11,7 +11,7 @@ Analyse historical monthly trends in waiting lists for both Inpatient and Outpat
 
 Provide detailed speciality-level and age profile insights.
 
-🧩 Key Metrics
+## Key Metrics
 
 Average Waiting List (mean number of patients awaiting treatment)
 
@@ -19,7 +19,7 @@ Median Waiting List (middle value to account for skewed distributions)
 
 Total Current Waiting List (total patients waiting across categories)
 
-📊 Dashboard Views
+## Dashboard Views
 1. Summary Page
 
 Overview of total waiting list by year and patient category.
@@ -36,7 +36,7 @@ Interactive filters for deeper analysis.
 
 Distribution plots for waiting times.
 
-🧾 Data Description
+## Data Description
 
 Time Period: 2018 – 2021
 
@@ -67,23 +67,14 @@ View	Description
 	Historical trends of inpatient vs outpatient
 🌐 Power BI Service Link
 
-If published:
-👉 View Interactive Dashboard on Power BI Service
+
+View Interactive Dashboard on Power BI Service
 
 📚 User Story
 
 As a healthcare operations manager, I want to track waiting list performance and patient distribution by category and speciality, so I can allocate resources efficiently and reduce patient waiting times.
 
-See full User Story Document
-.
 
-📁 Repository Structure
-healthcare-waitlist-dashboard/
-├── data/
-├── dashboard/
-├── docs/
-├── notebooks/
-└── README.md
 
 ✍️ Author
 

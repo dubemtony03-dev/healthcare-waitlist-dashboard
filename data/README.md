@@ -73,9 +73,3 @@ View Interactive Dashboard on Power BI Service
 As a healthcare operations manager, I want to track waiting list performance and patient distribution by category and speciality, so I can allocate resources efficiently and reduce patient waiting times.
 
 
-
-✍️ Author
-
-Anthony Ochei
-Data Analyst | Power BI Developer | Healthcare Analytics Enthusiast
-

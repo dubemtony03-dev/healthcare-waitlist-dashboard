@@ -93,7 +93,8 @@ Outpatients are shown on their own chart because their list is about ten times t
 │   ├── impatient/
 │   │   ├── 
 │   ├── outpatient/
-│   └── Mapping_Specialty.csv                     [raw file name]
+│   └── Mapping_Specialty.csv
+├── dax_measures/
 ├── images/
 │   ├── summary_average.png
 │   ├── summary_median.png

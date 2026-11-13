@@ -89,7 +89,11 @@ Outpatients are shown on their own chart because their list is about ten times t
 ```
 .
 ├── healthcare_waitlist.pbix
-├── data/                      [raw file name]
+├── data/
+│   ├── impatient/
+│   │   ├── 
+│   ├── outpatient/
+│   └── Mapping_Specialty.csv                     [raw file name]
 ├── images/
 │   ├── summary_average.png
 │   ├── summary_median.png

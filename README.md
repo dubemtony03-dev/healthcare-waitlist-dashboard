@@ -4,7 +4,7 @@ An interactive Power BI report on UK patient waiting lists, **January 2018 to Ma
 
 The latest month's waiting list is **709K**, about **11% higher** than the same month a year earlier (640K).
 
-**Tools:** Power BI Desktop [keep only what you used: Power Query, DAX measures]
+**Tools:** Power BI Desktop, Power Query, DAX measures
 
 ## What the dashboard answers
 
@@ -21,7 +21,7 @@ The latest month's waiting list is **709K**, about **11% higher** than the same 
 
 - **Filters:** date range (Archive_date), case type and speciality.
 - **Headline card:** latest month waiting list against the same month a year earlier.
-- **Key indicators:** waiting list by time band, split by age profile, with a switch between **Average** and **Median**.
+- **Key indicators:** waiting list by time band, split by age profile (0-15, 16-64, 65+), with a switch between **Average** and **Median**.
 - **Top 5 by speciality:** also follows the Average / Median switch.
 - **Case type split:** outpatient, day case and inpatient shares.
 - **Monthly trends:** day case and inpatient on one chart, outpatients on their own.
@@ -38,7 +38,7 @@ An expandable table for checking the numbers behind the Summary: archive date, t
 
 ### 3. DrillDown (hidden page)
 
-[One line on what this page does and how you reach it.]
+lets you explore deeper levels of a data hierarchy within the same chart or visual without leaving the page
 
 ## Data and model
 
@@ -50,6 +50,11 @@ An expandable table for checking the numbers behind the Summary: archive date, t
 | `All_Data` | The waiting list records |
 | `Mapping_Specialty` | Mapping table for speciality names |
 | `Calculation Method` | Small table behind the Average / Median switch |
+
+## Data preparation
+
+- **Age profile labels.** `0-15` appeared twice in the age profile column because one version had an extra space at the end. That split the age group into two series in the Summary chart and two rows in the Detailed View. I applied **Trim** to the `Age_Profile` column in Power Query, so there are now three age groups: 0-15, 16-64 and 65+.
+- **Check after the fix.** The totals did not change: January 2018 is still 582,686 and the grand total in the Detailed View is still 24,640,969, so no rows were lost.
 
 ## How to read the numbers
 
@@ -74,15 +79,15 @@ Outpatients are shown on their own chart because their list is about ten times t
 
 - **Totals add up monthly counts.** The grand total in the Detailed View (24.6M) sums the monthly lists across the date range, so it is not a count of different patients.
 - **Missing specialities.** Some records, mostly outpatient, have no speciality and show as `(Blank)`. They are included in totals but cannot be attributed to a speciality.
-- **Two "0-15" labels.** The age profile `0-15` appears under two slightly different labels, so it shows as two series. [Remove this line once you have standardised the label.]
 - **Period.** The data ends in March 2021 and includes the COVID-19 pandemic. The dashboard describes the lists and does not try to explain why they moved.
 - **Learning project.** Built from a public dataset as a portfolio project, so the findings should not be treated as official statistics.
 
 ## Credits
 
 - **Dataset:** [name and link]
-- **Built following:** [tutorial or course name, if any]
-- **What I added myself:** [for example the Average / Median switch, the Detailed View, the Top 5 by speciality]
+- **Built following:** a video tutorial [title and link]
+- **What I added myself:** found and fixed the duplicate `0-15` age label (see Data preparation) and checked the totals afterwards. 
+
 
 ## Repository structure
 

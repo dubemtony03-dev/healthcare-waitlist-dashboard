@@ -84,8 +84,8 @@ Outpatients are shown on their own chart because their list is about ten times t
 
 ## Credits
 
-- **Dataset:** [name and link]
-- **Built following:** a video tutorial [title and link]
+- **Dataset:** [[https://pivotalstats.com/end-end-power-bi-dashboard-development/]]
+- **Built following:** Pivotalstats
 - **What I added myself:** found and fixed the duplicate `0-15` age label (see Data preparation) and checked the totals afterwards. 
 
 
@@ -96,7 +96,6 @@ Outpatients are shown on their own chart because their list is about ten times t
 ├── healthcare_waitlist.pbix
 ├── data/
 │   ├── impatient/
-│   │   ├── 
 │   ├── outpatient/
 │   └── Mapping_Specialty.csv
 ├── dax_measures/
